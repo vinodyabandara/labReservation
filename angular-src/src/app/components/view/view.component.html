@@ -1,0 +1,27 @@
+<br><br>
+<div class="jumbotron">
+<h2 class="title">All Reservations</h2>
+<br>
+
+<table class="table table-hover">
+  <thead>
+    <tr class="table-dark">
+      <th>Lab</th>
+      <th>Date</th>
+      <th>Time Slot</th>
+      <th>Lecturer/Instructor</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr class="table-active" *ngFor="let lab of lab">
+      <td>{{lab.lab}}</td>
+      <td>{{lab.date}}</td>
+      <td>{{lab.tslot}}</td>
+      <td>{{lab.username}}</td>
+      <td>{{lab.subject}}</td>
+    </tr>
+  </tbody>
+  </table>
+</div>

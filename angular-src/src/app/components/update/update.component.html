@@ -1,0 +1,72 @@
+<br>
+
+<div class="jumbotron">
+    
+        <h2 class="page-header title">Edit Reservation</h2>
+       
+        <form (submit)="onEditReservation(id)" ngNativeValidate>
+
+        <!-- <div class="form-group">
+            <label>Lecturer Name</label>
+            <input type="text" [(ngModel)]="lname" name="lname" class="form-control">
+        </div> -->
+
+        <div class="form-group">
+            <label>Lab</label>
+            <!-- <input type="text" [(ngModel)]="lab" name="lab" class="form-control"> -->
+            <select class="custom-select form-control" type="text" [(ngModel)]="lab" name="lab">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>3rd year</option>
+                <option>4th year</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Date</label>
+            <input type="Date" min="{{today | date:'yyyy-MM-dd'}}"  [(ngModel)]="date" name="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Time Slot</label>
+            <!-- <input type="text" [(ngModel)]="tslot" name="tslot" class="form-control"> -->
+            <select class="custom-select form-control" type="text" [(ngModel)]="tslot" name="tslot" >
+                <option>8.00 a.m. - 10.00 a.m.</option>
+                <option>10.00 a.m. - 12.00 p.m.</option>
+                <option>1.00 p.m. - 3.00 p.m.</option>
+                <option>3.00 p.m. - 5.00 p.m.</option>
+                <option>5.00 p.m. - 7.00 p.m.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <!-- <input type="text" [(ngModel)]="subject" name="subject" class="form-control"> -->
+            <select class="custom-select form-control" type="text" [(ngModel)]="subject" name="subject">
+                <option>IS 1101</option>
+                <option>IS 1102 </option>
+                <option>IS 1104</option>
+                <option>IS 1107 </option>
+
+                <option>SCS 1201</option>
+                <option>SCS 1202 </option>
+                <option>SCS 1203 </option>
+                <option>SCS 1206</option>
+
+                <option>IS 2004</option>
+                <option>IS 2005</option>
+
+                <option>SCS 2104</option>
+                <option>SCS 2105</option>
+            </select>
+        </div>
+
+            <br>
+            <div class="bton"><input type="submit" class="btnbtn-primary" value="Add"></div>
+        </form>
+
+</div>
+        

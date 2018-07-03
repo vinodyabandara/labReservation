@@ -1,0 +1,40 @@
+<br>
+<br>
+
+  <div *ngIf="user" class="jumbotron detail">
+    <h2 class="page-header title text-warning">{{user.name}}</h2>
+    <br>
+    <ul class="list-group">
+      <li class="list-group-item">Username : {{user.username}}</li><br>
+      <li class="list-group-item">Email : {{user.email}}</li>
+    </ul>
+  </div>
+
+  <div class="jumbotron">
+   
+    <h3 class="title">Reservations you made</h3>
+    <br><br>
+    <table class="table table-hover" *ngIf = "lab">
+      <thead>
+        <tr>
+          <th>Lab</th>
+          <th>Date</th>
+          <th>Time Slot</th>
+          <th>Subject</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor = "let lab of lab">
+          <td>{{lab.lab}}</td>
+          <td>{{lab.date}}</td>
+          <td>{{lab.tslot}}</td>
+          <td>{{lab.subject}}</td>
+          <td><button type="button" class="btn btn-warning" (click)="edit(lab._id)">Edit</button></td> 
+          <td><button type="button" class="btn btn-danger" (click)="delete(lab._id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

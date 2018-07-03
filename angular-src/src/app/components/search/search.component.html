@@ -1,0 +1,42 @@
+
+<div class="jumbotron det">
+  <h1 class="title text-warning">Search Lab Reservation</h1>
+   
+  <form (submit)= "searchByDate()" class="det">
+    <label class="detail">Enter the date: </label>
+    <input name= "date" [(ngModel)]= "date" type="date" placeholder="Search" class="cont">
+    <input type="submit" value="Search" class="btn btn-outline-warning detail cont">
+  </form>
+  
+  <div class="row download text-center det">
+      <div class="col-md-4"></div>
+      <div *ngIf="authService.loadUserType()" class="col-md-4">
+        <p class="detail">To generate report as a pdf</p><br>
+        <button (click)="download()" class="btn btn-outline-warning detail" >Download</button>
+      </div>
+      <div class="col-md-4"></div>
+  </div>
+<br><br>
+  <table class="table table-hover" *ngIf = "labs">
+    <thead>
+      <tr>    
+        <th>Lab</th>
+        <th>Date</th>
+        <th>Time Slot</th>
+        <th>Username</th>  
+        <th>Subject</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor = "let lab of labs">
+        <td>{{lab.lab}}</td>
+        <td>{{lab.date}}</td>
+        <td>{{lab.tslot}}</td>
+        <td>{{lab.username}}</td>
+        <td>{{lab.subject}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

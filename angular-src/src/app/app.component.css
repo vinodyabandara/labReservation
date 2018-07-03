@@ -1,0 +1,19 @@
+.alertsContainer .alertsRow.warn  {
+    border: 1px solid #ffc549;
+}
+.alertsContainer .alertsRow.warn.iconpanel {
+    background:#d4a337;
+    color: #fff;
+}
+.alertsContainer .alertsRow.warn.messagepanel {
+    color: #000;
+    background: rgb(160, 54, 54);
+}
+.alertsContainer .alertsRow.warn.closeicon {
+    color: #000;
+}
+.alertsContainer .alertsRow.warn.closeicon a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}

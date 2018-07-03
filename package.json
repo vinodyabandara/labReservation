@@ -1,0 +1,25 @@
+{
+  "name": "labreservation",
+  "version": "1.0.0",
+  "description": "lab reservation system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "autotable": "^1.0.0",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "jspdf": "^1.4.1",
+    "jspdf-autotable": "^2.3.4",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Vinodya Bandara",
+  "license": "ISC"
+}
