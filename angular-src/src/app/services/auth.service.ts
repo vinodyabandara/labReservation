@@ -26,6 +26,7 @@ export class AuthService {
       .map(res => res.json());
   }
 
+  //for admin panel
   getUser(){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -66,6 +67,7 @@ export class AuthService {
     localStorage.clear();
   }
 
+  //for admin panel
   loadUserType(){
     if(tokenNotExpired('id_token')){
       const user = localStorage.getItem('user');

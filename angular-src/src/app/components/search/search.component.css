@@ -10,12 +10,22 @@
 
 .detail{
     font-size: 20px;
+    
+}
+
+.detail1{
+    border-radius: 10px;
+    padding: 5px 60px;
 }
 
 .cont{
     margin-left: 50px; 
+    border-radius: 10px;
+    padding: 5px 100px;
+    
 }
 
 .det{
     margin-top:80px;
+    
 }

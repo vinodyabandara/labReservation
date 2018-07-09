@@ -1,39 +1,22 @@
-<br>
-<br>
 
-<div class="jumbotron text-center main ">
-  <h1>
-    Lab Reservation System
+<div class=" text-center main">
+  <h1 class="header">
+    Welcome to UCSC Labs!
   </h1>
-  <p class="lead">
-    Welcome to UCSC lab reservation system
-  </p>
+  <img class="img" src="../../assets/images/s1.png">
+  <!-- <img class="img" src="../../assets/images/s3.png"> -->
+  <img class="img" src="../../assets/images/s2.png">
+  <p class="cont">
+    <br> An online lab reservation system for the UCSC labs
 
   <div>
-     <a class="btn btn-primary" [routerLink]="['/register']">Register</a> 
-     <a class="btn btn-default" [routerLink]="['/login']">Login</a>
+    <!-- <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"> 
+      <a class="btn btn-outline-warning bton" [routerLink]="['/register']">Register</a> </li><br>
+    <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+      <a class="btn btn-outline-warning bton1" [routerLink]="['/login']">Login</a> </li> -->
+
+      <a class="btn btn-outline-warning bton" [routerLink]="['/register']">Register</a> <br>
+      <a class="btn btn-outline-warning bton1" [routerLink]="['/login']">Login</a>
+      
   </div>
 </div>
-
-<!-- <div class="row">
-  <div class="col-md-4">
-    <h3>
-      Express Backend
-    </h3>
-    <p>iBQIBQIBIB</p>
-  </div>
-
-  <div class="col-md-4">
-    <h3>
-      Angular-CLI
-    </h3>
-    <p>iBQIBQIBIB</p>
-  </div>
-
-  <div class="col-md-4">
-    <h3>
-      JWT Tokens
-    </h3>
-    <p>iBQIBQIBIB</p>
-  </div>
-</div> -->

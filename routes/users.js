@@ -66,6 +66,7 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req,res,n
     res.json({user: req.user});
 });
 
+//for admin panel
 router.get('/viewUser', function(req, res, next){
     User.getUsers({}, function(err, users){
         if(err){

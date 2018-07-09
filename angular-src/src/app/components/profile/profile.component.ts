@@ -44,17 +44,16 @@ export class ProfileComponent implements OnInit {
 
     delete(id){
       this.authService.delete(id).subscribe(res => {
+        console.log('delete function - outter');
         
-        if(res.success){
-         
+        if(res){
+        // console.log('delete function');
          this.alerts.setMessage('Reservation Deleted','success');
          this.ngOnInit();
         }
-
-        // else{
-        //   this.alerts.setMessage(res.msg,'warn');
-        //   this.router.navigate(['profile']);
-        // }
+        err =>{
+          this.alerts.setMessage(res.msg,'warn');
+        }
       });
   }
 

@@ -1,6 +1,6 @@
 
 <div class="jumbotron det">
-  <h1 class="title text-warning">Search Lab Reservation</h1>
+  <h1 class="title ">Search Lab Reservation</h1>
    
   <form (submit)= "searchByDate()" class="det">
     <label class="detail">Enter the date: </label>
@@ -12,7 +12,7 @@
       <div class="col-md-4"></div>
       <div *ngIf="authService.loadUserType()" class="col-md-4">
         <p class="detail">To generate report as a pdf</p><br>
-        <button (click)="download()" class="btn btn-outline-warning detail" >Download</button>
+        <button (click)="download()" class="btn btn-outline-warning detail1" >Download</button>
       </div>
       <div class="col-md-4"></div>
   </div>
